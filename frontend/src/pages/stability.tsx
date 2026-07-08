@@ -151,6 +151,7 @@ const StabilityPage = () => {
                   </div>
                 ))}
               </div>
+              </div>
             ) : (
               <p className="text-gray-500">No results yet.</p>
             )}
