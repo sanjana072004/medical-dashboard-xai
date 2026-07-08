@@ -17,7 +17,7 @@ WORKDIR /app
 
 RUN apk add --no-cache dumb-init
 
-RUN useradd -m -u 1000 appuser
+RUN addgroup -S appuser && adduser -S -G appuser -u 1001 appuser
 
 COPY --from=builder --chown=appuser:appuser /app/package.json /app/package-lock.json ./
 COPY --from=builder --chown=appuser:appuser /app/.next ./.next
