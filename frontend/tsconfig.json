@@ -9,7 +9,7 @@
     "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "ignoreDeprecations": "6.0",
+    "ignoreDeprecations": "5.0",
     "baseUrl": ".",
     "strict": true,
     "esModuleInterop": true,

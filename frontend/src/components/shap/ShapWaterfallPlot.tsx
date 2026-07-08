@@ -21,7 +21,7 @@ export const ShapWaterfallPlot = ({ explanation }: { explanation: any }) => {
   return (
     <div>
       <h4 className="font-semibold mb-2">SHAP Waterfall</h4>
-      <Plot data={[{ x: x, y: y, type: 'waterfall', measure: ['absolute'].concat(Array(contribs.length).fill('relative')), text: y.map((v) => v.toFixed(3)) }]} layout={{ margin: { l: 60, r: 20, t: 20, b: 80 }, height: 360 }} />
+      <Plot data={[{ x: x, y: y, type: 'waterfall', measure: ['absolute'].concat(Array(contribs.length).fill('relative')), text: y.map((v) => v.toFixed(3)) } as any]} layout={{ margin: { l: 60, r: 20, t: 20, b: 80 }, height: 360 }} />
     </div>
   );
 };
